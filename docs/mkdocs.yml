@@ -1,0 +1,66 @@
+# https://www.mkdocs.org/user-guide/configuration/#project-information
+site_name: MkDocs template
+site_description: A base template for a MkDocs docs site on GitHub Pages.
+site_url: https://facine.github.io/mkdocs_template
+repo_url: https://github.com/facine/mkdocs_template
+repo_name: facine/mkdocs_template
+edit_uri: edit/master/docs/content
+docs_dir: content
+
+# https://www.mkdocs.org/user-guide/configuration/#documentation-layout
+nav:
+  - Home: index.md
+  - Tutorial:
+    - tutorial/index.md
+    - First page: tutorial/first_page.md
+    - Second page: tutorial/second_page.md
+# https://www.mkdocs.org/user-guide/configuration/#theme
+theme:
+  # https://squidfunk.github.io/mkdocs-material/customization
+  name: material
+  locale: en
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer#generator-notice
+  logo: assets/img/logo.png
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons#favicon
+  favicon: assets/img/logo.png
+  features:
+    # https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#edit-this-page
+    - content.action.edit
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-loading
+    - navigation.instant
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#anchor-tracking
+    - navigation.tracking
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation
+    - navigation.tabs
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections
+    - navigation.sections
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-expansion
+    - navigation.expand
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#with-navigation-path
+    - navigation.path
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#section-index-pages
+    - navigation.indexes
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#back-to-top-button
+    - navigation.top
+
+# https://www.mkdocs.org/user-guide/configuration/#markdown_extensions
+markdown_extensions:
+  # https://python-markdown.github.io/extensions/admonition
+  - admonition
+  # https://python-markdown.github.io/extensions/smarty
+  - smarty
+  # https://python-markdown.github.io/extensions/toc
+  - toc:
+      permalink: true
+
+# https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins
+plugins:
+  # https://www.mkdocs.org/user-guide/configuration/#search
+  - search
+
+# https://www.mkdocs.org/user-guide/configuration/#copyright
+copyright: Maintained by Cambrico Team
+
+extra:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer#generator-notice
+  generator: false

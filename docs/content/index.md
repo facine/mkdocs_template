@@ -1,0 +1,3 @@
+# MkDocs Template
+
+Hello world!

@@ -1,0 +1,3 @@
+# MkDocs Template
+
+Second page.
