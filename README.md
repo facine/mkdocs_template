@@ -1,6 +1,6 @@
 # MkDocs Template
 
-A base template for a MkDocs docs site on GitHub Pages.
+A base template for a MkDocs docs site on GitHub Pages: [facine.github.io/mkdocs_template](https://facine.github.io/mkdocs_template).
 
 ## Help
 
